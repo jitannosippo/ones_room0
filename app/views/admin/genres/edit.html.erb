@@ -1,0 +1,7 @@
+<h1>Admin::Genres#edit</h1>
+<p>Find me in app/views/admin/genres/edit.html.erb</p>
+
+<%= form_with model:@genres, url:admin_genre_path(@genres.id), method: :patch do |f| %>
+	<%= f.text_field :name %>
+	<%= f.submit '変更を保存' ,class:'btn btn-outline-success' %>
+<% end %>

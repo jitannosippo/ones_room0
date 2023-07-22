@@ -1,0 +1,7 @@
+<h1>Admin::Genres#index</h1>
+<p>Find me in app/views/admin/genres/index.html.erb</p>
+
+<% @genres.each do |genres| %>
+	<%= genres.name %>
+	<%= link_to "編集する" , edit_admin_genre_path(genres.id) ,class:'btn btn-outline-primary' %>
+<% end %>

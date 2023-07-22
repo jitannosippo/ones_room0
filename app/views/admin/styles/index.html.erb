@@ -1,0 +1,7 @@
+<h1>Admin::Styles#index</h1>
+<p>Find me in app/views/admin/styles/index.html.erb</p>
+
+<% @styles.each do |styles| %>
+	<%= styles.name %>
+	<%= link_to "編集する" , edit_admin_style_path(styles.id) ,class:'btn btn-outline-primary' %>
+<% end %>
